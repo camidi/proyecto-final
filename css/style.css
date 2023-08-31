@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+.nav {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    align-items: center;
+}
+
+.seccion {
+    background-color: #E1DDD8;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav a {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px;
+}
+
+.nav li {
+    display: inline-block;
+    width: 150px;
+}
+
+.main-home {
+    width: 100%;
+    margin: 0px 0px 150px 0px;
+    z-index: -1;
+    position: absolute;
+}
+
+.footer {
+    background-color: #F6F6F4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos a{
+    width: 15px;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-size-adjust: 25px;
+}
+
+/* Contacto */
+
+#contacto {
+    text-transform: uppercase;
+    padding: 50px;
+    border: 2px solid;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.div-formulario {
+    display: flex;
+}
+
+#foto-contacto {
+    height: 400px;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 500px;
+}
+
+.inputs {
+    background-color: rgb(197, 197, 197);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+}
+
+.contenedor-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.enviar {
+    background-color: blue;
+    border: solid 2px black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    margin: 50px;
+
+}
+
+.enviar:hover {
+    background-color: bisque;
+}
+
+.titulos {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 200;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    margin: 20px;
+}
+
+.grilla {
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    border: 2px black solid;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "uno uno dos tres"
+        "uno uno seis seis"
+        "cuatro cinco seis seis";
+    margin-top: 100vh;
+}
+
+.grilla div {
+    background-color: blueviolet;
+    border: 1px solid chocolate;
+    margin: 4px;
+}
+
+.uno {
+    grid-area: uno;
+}
+
+.uno img {
+    width: 500px;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.dos img {
+    width: 250px;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.tres img {
+    width: 250px;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cuatro img {
+    width: 250px;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.cinco img {
+    width: 250px;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.seis img {
+    width: 500px;
+}
+
+article {
+    align-items: center;
+}
+
+/*** About ***/
+
+.foto-about {
+    height: 590px;
+    margin: 0 80px 30px 50px;
+}
+
+.main-about {
+    margin-top: 94px;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.4fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "yo atras atras"
+      "yo about-text about-text"
+      ". . .";
+  }
+  
+.yo { 
+    grid-area: yo; 
+    height: 450px;
+}
+  
+.atras { 
+    grid-area: atras; 
+    border: solid black 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    justify-self: flex-start;
+    align-self: center;
+    padding: 30px;
+}
+  
+.about-text { 
+    grid-area: about-text; 
+    align-self: center;
+    max-width: 580px;
+}
+  
+.article-about {
+    margin-top: 147px
+}
+
+/* Servicios****** */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #F3F1EE;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  .main-servicios {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 94px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #E6DAE3;
+    padding: 10px;
+    font-weight: 400;
+  }
+  
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight:550 ;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  /* Portfolio */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+        margin: 94px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  @media (min-width: 600px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+  }
+
+
+  /* HomeSlider */
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 100%;
+    height: 100%;
+    height: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
