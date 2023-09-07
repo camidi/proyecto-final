@@ -166,9 +166,14 @@
   .footer {
     height: 50px;
     background-color: rgb(255, 237, 225);
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   
-
+.ig {
+  color: aqua;
+  padding: 0 50px;
+}
   
   @media (max-width:768px){
 
@@ -285,14 +290,13 @@
     font-weight: 200;
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .iconos {
-    width: 50px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .iconos a{
@@ -600,3 +604,4 @@ z-index: -10;
   .header-seccion {
     position: relative;
   }
+
