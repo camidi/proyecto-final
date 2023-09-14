@@ -163,18 +163,6 @@
 	100% {margin-left: -300%;}
 }
   
-  .footer {
-    height: 50px;
-    background-color: rgb(255, 237, 225);
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-.ig {
-  color: aqua;
-  padding: 0 50px;
-}
-  
   @media (max-width:768px){
 
     .menu-btn {
@@ -234,7 +222,7 @@
     height: 100px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0px;
     position: absolute;
     width: 100%;
   }
@@ -289,18 +277,55 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     width: 100%;
-    display: flex;
+    justify-content: space-between;
+}
+
+
+.social-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.social {
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  color: var(--color1);
+  line-height: 50px!important;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  color: #969087;
+}
+
+.social:hover {
+  background: linear-gradient(45deg,white,rgb(255, 237, 225));
+}
+
+.footer {
+  height: 50px;
 }
 
 .iconos {
-    width: 100%;
+    width: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 .iconos a{
     width: 15px;
+}
+
+.ig{
+  color: blue;
+}
+
+.linkedin {
+  color: blueviolet;
 }
 
 .texto {
@@ -314,15 +339,13 @@
 #contacto {
     text-transform: uppercase;
     padding: 50px;
-    margin: 50px 0 20px 0;
-    border: 2px solid;
+    margin: 15px 0 5px 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
 .div-formulario {
     display: flex;
-    background-color: aqua;
 }
 
 #foto-contacto {
@@ -598,10 +621,9 @@ z-index: -10;
   }
 
   .menu-seccion {
-    background-color: aqua;
+    background-color: rgb(187, 201, 201);
   }
 
   .header-seccion {
     position: relative;
   }
-
