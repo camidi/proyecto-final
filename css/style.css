@@ -643,6 +643,7 @@ z-index: -10;
     .div-formulario {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     .foto-contacto {
