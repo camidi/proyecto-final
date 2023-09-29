@@ -349,7 +349,7 @@
     display: flex;
 }
 
-#foto-contacto {
+.foto-contacto {
     height: 400px;
 }
 
@@ -426,7 +426,7 @@ z-index: -10;
 
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.4fr 1.1fr;
+    grid-template-rows: 0.5fr 2.5fr 1.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -437,7 +437,9 @@ z-index: -10;
   
 .yo { 
     grid-area: yo; 
-    height: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
   
 .atras { 
@@ -458,8 +460,10 @@ z-index: -10;
 }
   
 .article-about {
-    margin-top: 147px
+    margin-top: 45px
 }
+
+
 
 /* Servicios****** */
 
@@ -622,6 +626,55 @@ z-index: -10;
       opacity: 1;
       transform: translateY(0);
     }
+
+    .about-text {
+      min-width: 250px;
+      grid-column: span 2;
+      margin: 15px;
+    }
+
+    .atras {
+      min-width: 250px;
+      padding: 5px;
+      margin: 45px;
+      grid-column: span 2;
+    }
+
+    .div-formulario {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .foto-contacto {
+      max-width: 100%;
+    }
+
+    .form {
+      max-width: 80%;
+    }
+    
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      grid-template-areas: 
+      "atras"
+      "yo"
+      "texto-about";
+    }
+  
+   h1 {
+    font-size: 38px;
+     }
+
+   .article-about {
+     margin-top: -30px;
+    }
+
+      .foto-about{
+        height: 300px;
+        grid-column: span 2;
+      }
+        
   
   }
 
